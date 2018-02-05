@@ -9,7 +9,8 @@ test('titleCase', function (t) {
     ['the Dangers Of Hiking Without Proper Shoes', 'The Dangers of Hiking Without Proper Shoes'],
     ['an hour or so', 'An Hour or So'],
     ['Of the meaning Of Of', 'Of the Meaning of Of'],
-    ['Thing With     Extra Spaces', 'Thing With Extra Spaces']
+    ['Thing With     Extra Spaces', 'Thing With Extra Spaces'],
+    ['iphone, ipad, imac, ipod, and ihome stolen from apple store', 'iPhone, iPad, iMac, iPod, and iHome Stolen From Apple Store']
   ]
 
   patterns.forEach(pattern => {
