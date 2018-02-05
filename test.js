@@ -10,7 +10,9 @@ test('titleCase', function (t) {
     ['an hour or so', 'An Hour or So'],
     ['Of the meaning Of Of', 'Of the Meaning of Of'],
     ['Thing With     Extra Spaces', 'Thing With Extra Spaces'],
-    ['iphone, ipad, imac, ipod, and ihome stolen from apple store', 'iPhone, iPad, iMac, iPod, and iHome Stolen From Apple Store']
+    ['iphone, ipad, imac, ipod, and ihome stolen from apple store', 'iPhone, iPad, iMac, iPod, and iHome Stolen From Apple Store'],
+    ['$500 stolen in strong-arm robbery', '$500 Stolen in Strong-Arm Robbery'],
+    ['semi-automatic pistol found in dumpster', 'Semi-Automatic Pistol Found in Dumpster']
   ]
 
   patterns.forEach(pattern => {

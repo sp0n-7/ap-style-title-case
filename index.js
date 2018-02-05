@@ -8,8 +8,11 @@ function titleCase (str) {
 
   return words
     .map((word, index) => {
+      
+      if (word.includes('-')) return word.split('-').map(capitalize).join('-')
       if (iDevices.includes(word.toLowerCase().replace(',',''))) return iCapitalize(word)
       if (index === 0) return capitalize(word)
+
       if (index === words.length - 1) return capitalize(word)
       if (stopwords.includes(word.toLowerCase())) return word.toLowerCase()
       return capitalize(word)
